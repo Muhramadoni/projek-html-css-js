@@ -1,0 +1,105 @@
+/* Selector * ini untuk mengatur padding dan margin */
+* {
+  padding: 0px; /* Propperti ini untuk mengatur padding ke default sebesar 0px */
+  margin: 0px; /* Propperti ini untuk mengatur margin ke default sebesar 0px */
+}
+
+/* Selector body untuk mengatur warna background */
+body {
+  background-color: #3f3f3f; /* Properti ini untuk mengatur warna pada background */
+}
+
+/* Selector header ini untuk mengatur tata letak dari navbarnya */
+header {
+  display: flex; /* Propperti ini untuk mengatur tata letak dari header navbar ke posisi horizontal (dari kiri ke kanan) */
+  justify-content: space-between; /* Propperti ini untuk mengatur tata letak dari header navbar dan menyebarkan setiap elemen pada navbar */
+  align-items: center; /* Propperti ini untuk menyesuaikan agar posisi tiap elemen pada navbar berada di tengah pas */
+  padding: 18px 15px; /* Propperti ini untuk mengatur padding atas bawah sebesar 10 px dan kiri kanan sebesar 15px */
+  background-image: linear-gradient(
+    10deg,
+    #303030,
+    #181818
+  ); /* Propperti ini untuk mengatur warna pada navbar */
+}
+
+/* Selector h3 untuk mengatur font, cursor, dan warna */
+h3 {
+  color: #ffff; /* Propperti ini untuk mengatur warna pada judul navbar */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Propperti ini untuk mengatur gaya font pada judul navbar */
+  font-size: 23px; /* Properti ini untuk mengatur ukuran font sebesar 23px */
+  cursor: pointer; /* Properti ini untuk mengubah kursornya menjadi ikon tangan saat diarahkan ke buttonya */
+}
+
+/* Properti yang didefinisikan di bawah ini akan diterapkan pada semua elemen <li>, <a>, dan class button */
+/* Tujuannya ini adalah untuk mengelompokkan elemen-elemen yang dipilih (li, a, dan class button) untuk menerapkan properti yang sama */
+/* Dipilihnya elemen-elemen ini juga untuk mengatur fontnya, mengatur warna fontnya, serta menghilangkan garis bawah pada list linknya menjadi none */
+li,
+a,
+.button {
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+}
+
+.list-link ul {
+  list-style-type: none;
+}
+
+ul,
+li,
+a {
+  display: inline-block;
+  padding: 0px 3px;
+}
+
+.button {
+  background-color: #464747;
+  padding: 5px 10px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #686666;
+  transition: all 0.3s ease 0s;
+}
+
+.container {
+  margin: 30px 30px;
+  background-color: #5a5a5a;
+  border-radius: 8px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.motivasi {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 11px;
+  box-shadow: 0px 5px 5px #1d1c1c;
+  background-color: #3a3a36;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.motivasi p {
+  margin: 0;
+  color: #fffcfc;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.motivasi p:last-child {
+  text-align: center;
+  margin-top: 10px;
+}

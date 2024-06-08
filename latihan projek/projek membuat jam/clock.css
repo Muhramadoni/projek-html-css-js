@@ -1,0 +1,104 @@
+/* CSS untuk styling body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Jenis font */
+  text-align: center; /* Pusatkan teks secara horizontal */
+  background-color: rgb(17, 14, 14); /* Warna latar belakang */
+  margin: 0; /* Hapus margin default */
+  padding: 0; /* Hapus padding default */
+  height: 100vh; /* Set tinggi ke 100% dari viewport height */
+  display: flex; /* Menjadikan body sebagai flex container */
+  align-items: center; /* Pusatkan secara vertikal */
+  justify-content: center; /* Pusatkan secara horizontal */
+}
+
+/* CSS untuk styling judul (h1) */
+h1 {
+  color: white; /* Warna teks putih */
+  text-transform: uppercase; /* Teks dalam huruf besar */
+  font-family: "Times New Roman", Times, serif; /* Jenis font */
+  position: absolute; /* Posisi absolut agar dapat diatur di tengah */
+  top: 10%; /* Jarak dari atas */
+  left: 50%; /* Posisi di tengah horisontal */
+  transform: translate(-50%, -50%); /* Menyesuaikan posisi ke tengah */
+}
+
+/* CSS untuk styling jam digital */
+.clock {
+  position: relative; /* Posisi relatif untuk elemen turunannya */
+  width: 200px; /* Lebar elemen jam */
+  height: 200px; /* Tinggi elemen jam */
+  border-radius: 50%; /* Lingkaran dengan border-radius 50% menjadi bentuk bulat */
+  background: rgb(36, 32, 32); /* Warna latar belakang jam */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk elemen jam */
+  margin: 10px; /* Jarak antara jam dan elemen lainnya */
+  border: 2px solid #ffffff; /* Border putih pada elemen jam */
+}
+
+/* CSS untuk styling jarum-jarum jam */
+.hand {
+  position: absolute; /* Posisi absolut agar dapat diatur secara independen */
+  width: 25%; /* Lebar jarum */
+  height: 4px; /* Tinggi jarum */
+  background: #bd0d48; /* Warna jarum */
+  top: 49%; /* Posisi vertikal di tengah */
+  left: 24%; /* Posisi horisontal di tengah */
+  transform-origin: 100%; /* Pusat rotasi di ujung jarum */
+  transition: transform 0s cubic-bezier(0.4, 2.6, 0.6, 1); /* Transisi untuk efek perubahan posisi */
+}
+
+/* CSS untuk styling jarum jam */
+.hour {
+  height: 2px; /* Tinggi jarum jam */
+}
+
+/* CSS untuk styling jarum menit */
+.minute {
+  width: 28%; /* Lebar jarum menit */
+  height: 2px; /* Tinggi jarum menit */
+  left: 21%; /* Posisi horisontal di tengah */
+  background: #fee800; /* Warna jarum menit */
+}
+
+/* CSS untuk styling jarum detik */
+.second {
+  width: 30%; /* Lebar jarum detik */
+  height: 2px; /* Tinggi jarum detik */
+  left: 20%; /* Posisi horisontal di tengah */
+  background: #04fc43; /* Warna jarum detik */
+}
+
+/* CSS untuk styling titik di tengah jam */
+.dot {
+  position: absolute; /* Posisi absolut agar dapat diatur di tengah */
+  width: 15px; /* Lebar titik */
+  height: 15px; /* Tinggi titik */
+  background: #000000; /* Warna titik */
+  border-radius: 50%; /* Lingkaran dengan border-radius 50% menjadi bentuk bulat */
+  top: 50%; /* Posisi vertikal di tengah */
+  left: 50%; /* Posisi horisontal di tengah */
+  transform: translate(-50%, -50%); /* Menyesuaikan posisi ke tengah */
+}
+
+/* CSS untuk styling angka-angka pada jam */
+.numbers {
+  position: absolute; /* Posisi absolut agar dapat diatur di tengah */
+  width: 100%; /* Lebar elemen angka-angka */
+  height: 100%; /* Tinggi elemen angka-angka */
+  display: flex; /* Menjadikan elemen angka-angka sebagai flex container */
+  color: white; /* Warna teks putih */
+  right: 2%; /* Jarak dari sisi kanan */
+  justify-content: space-between; /* Menyebar angka-angka dengan ruang yang sama */
+  align-items: center; /* Pusatkan secara vertikal */
+  transform: rotate(30deg); /* Putar elemen angka-angka sebesar 30 derajat */
+  transform-origin: 110% 72%; /* Pusat rotasi di ujung elemen angka-angka */
+}
+
+/* CSS untuk styling setiap angka pada jam */
+.number {
+  position: absolute; /* Posisi absolut agar dapat diatur di tengah */
+  width: 100%; /* Lebar elemen angka */
+  right: 1%; /* Jarak dari sisi kanan */
+  text-align: center; /* Pusatkan teks secara horizontal */
+  transform-origin: 50% 350%; /* Pusat rotasi di tengah bawah elemen angka */
+  transform: rotate(calc(-30deg * var(--n))) translateY(-90%); /* Putar elemen angka sesuai urutan jam */
+}

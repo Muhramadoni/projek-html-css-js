@@ -1,0 +1,61 @@
+<!--Penulis : Muhammad Ramadoni-->
+<!--Tanggal : 29-01-2023 - 31-01-2023-->
+<!--Waktu   : 23:02 - 18:06-->
+<!--Tugas   : Projek Membuat Jam Digital Dengan Menggunakan HTML, CSS, JAVASCRIPT-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Menghubungkan stylesheet eksternal -->
+    <link rel="stylesheet" href="clock.css" />
+  </head>
+  <body>
+    <!-- Judul halaman -->
+    <h1>Jam Digital</h1>
+
+    <!-- Container untuk jam digital -->
+    <div class="clock">
+      <!-- Jarum jam (hour), menit (minute), dan detik (second) -->
+      <div class="hand hour" id="hour"></div>
+      <div class="hand minute" id="minute"></div>
+      <div class="hand second" id="second"></div>
+
+      <!-- Titik pusat jam -->
+      <div class="dot"></div>
+
+      <!-- Angka-angka pada lingkaran jam -->
+      <div class="numbers">
+        <!-- Angka 1 (pukul 12) -->
+        <div class="number" style="--n: 1">12</div>
+        <!-- Angka 2 (pukul 11) -->
+        <div class="number" style="--n: 2">11</div>
+        <!-- Angka 3 (pukul 10) -->
+        <div class="number" style="--n: 3">10</div>
+        <!-- Angka 4 (pukul 9) -->
+        <div class="number" style="--n: 4">9</div>
+        <!-- Angka 5 (pukul 8) -->
+        <div class="number" style="--n: 5">8</div>
+        <!-- Angka 6 (pukul 7) -->
+        <div class="number" style="--n: 6">7</div>
+        <!-- Angka 7 (pukul 6) -->
+        <div class="number" style="--n: 7">6</div>
+        <!-- Angka 8 (pukul 5) -->
+        <div class="number" style="--n: 8">5</div>
+        <!-- Angka 9 (pukul 4) -->
+        <div class="number" style="--n: 9">4</div>
+        <!-- Angka 10 (pukul 3) -->
+        <div class="number" style="--n: 10">3</div>
+        <!-- Angka 11 (pukul 2) -->
+        <div class="number" style="--n: 11">2</div>
+        <!-- Angka 12 (pukul 1) -->
+        <div class="number" style="--n: 12">1</div>
+      </div>
+    </div>
+
+    <!-- Menghubungkan script JavaScript eksternal -->
+    <script src="clock.js"></script>
+  </body>
+</html>

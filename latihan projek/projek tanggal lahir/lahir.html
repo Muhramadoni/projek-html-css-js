@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentukan Usia</title>
+    <link rel="stylesheet" href="lahir.css" />
+  </head>
+  <body>
+    <div id="age-container">
+      <h2>Tentukan Usia</h2>
+      <label for="birthdate">Tanggal Lahir:</label>
+      <!-- Batasi rentang tahun dari 1990 hingga tahun sekarang -->
+      <input type="date" id="birthdate" min="1990-01-01" max="2024-12-31" />
+      <button onclick="calculateAge()">Hitung Usia</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="lahir.js"></script>
+  </body>
+</html>

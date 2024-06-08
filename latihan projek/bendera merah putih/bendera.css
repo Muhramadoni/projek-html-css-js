@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+.merdeka {
+  margin: auto;
+  margin-top: 300px;
+}
+.merah {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  background-color: red;
+}
+.putih {
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  background-color: white;
+}
